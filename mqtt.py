@@ -9,7 +9,8 @@ import sqlite3
 DEVICE_NAME = 'DEV3634-8517'
 
 TTN_BROKER = 'eu.thethings.network'
-TTN_USERNAME = 'hwid3011'
+#nome da sua aplicação
+TTN_USERNAME = 'hwid3011-trocar'
 #Access Keys da Aplicação  :fica no final da página da aplicação.
 TTN_PASSWORD = 'ttn-account-v2.xMwGc-trocar pela susa chave -8pS4Q16g4Ml09b8XnswMEM'
 TTN_TOPIC = '+/devices/+/up'
@@ -101,6 +102,7 @@ client.connect(TTN_BROKER, 1883, 60)
 
 client.loop_forever()
 #Fontes consultadas:
+#https://www.thethingsnetwork.org/forum/t/a-python-program-to-listen-to-your-devices-with-mqtt/9036
 # https://pypi.org/project/paho-mqtt/
 # https://8gwifi.org/base64Hex.jsp
 # https://www.dotnetperls.com/substring-python
